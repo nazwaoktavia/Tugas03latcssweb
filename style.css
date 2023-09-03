@@ -1,0 +1,111 @@
+h1{
+    /* mengatur warna teks */
+    color: rgb(150, 110, 224);
+    /* merubah jenis font */
+    font-family: Arial, Helvetica, sans-serif;
+    /* mengatur ukuran font */
+    font-size: 50px;
+    /* mengatur posisi teks */
+    text-align: center;
+}
+
+p{
+    /*  digunakan untuk mengatur jarak alinea pada text */
+    text-indent: 30px;
+    /* memberi ruang spasi dan jarak antara barisan teks yang satu dengan 
+    yang lainnya pada suatu paragraf. */
+    line-height: 1.5;
+    text-align: justify;
+    font-size: 16px;
+    color: rgb(110, 134, 207);
+    font-family: verdana;
+}
+
+li{
+    color: rgb(199, 110, 207);
+    font-size: 12px;
+    font-family: cursive;
+    text-align: justify;
+}
+
+/* kondisi ketika hyperlink belum pernah dikunjungi */
+a:link{
+    color: midnightblue;
+}
+/* kondisi ketika hyperlink sudah pernah dikunjungi */
+a:visited{
+    color: green;
+}
+/* kondisi ketika mouse diletakkan di atas hyperlink */
+a:hover{
+    color: orange;
+}
+/* kondisi ketika hyperlink sedang ditekan */
+a:active{
+    color: darkcyan;
+}
+
+/* selector class button */
+.button{
+    border-radius: 5px;
+    /*  garis tepi pada element/tag none*/
+    border: none;
+    /* properti background */
+    background-color: midnightblue;
+    /* mengatur warna huruf pada button */
+    color: #ffff;
+    /* mengatur tata letak tulisan */
+    text-align: center;
+    /* ukuran huruf */
+    font-size: 28px;
+}
+
+.button:hover {background-color: orange;}
+.button:active{
+    background-color: blueviolet;
+    /*menambahkan bayangan pada sebuah elemen HTML, seperti kotak atau teks.  */
+    box-shadow: 0 5px #666; 
+}
+
+/* ubah style antar sell */
+td{
+    border-collapse: collapse;
+    font-family: Verdana;
+}
+
+/* Menunjuk ke elemen yang menjadi anak
+pertama dari direct parent-nya 
+ubah lebar semua kolom*/
+td:first-child{
+    width: 50px;
+}
+
+/* ubah lebar semua kolom yang menjadi first-child */
+thead td{
+    width: 100px;
+    border-bottom: 1px solid rgb(47, 44, 44);
+    background-color: #c081e0;
+    color: white;
+}
+
+/* Menunjuk ke elemen yang menjadi anak
+bernomor urut ganjil
+ */
+tbody tr:nth-child(odd){
+    background-color: #81CFE0;
+    color: white;
+}
+
+/* Menunjuk ke elemen yang menjadi anak
+bernomor urut genap */
+tbody tr:nth-child(even){
+    background-color:  #6fbacb;
+    color: white;
+}
+
+/* ubah warna kolom san teks dalamnya yang dimodifikasi supaya dapat
+berubah warna ketika dalam kondisi 'hover' */
+tbody tr:hover{
+    background-color: rgb(128, 86, 206);
+    color: rgb(107, 193, 210);
+}

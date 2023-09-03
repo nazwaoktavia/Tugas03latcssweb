@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 6</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        /*Selector digunakan unruk memilih mana bagian dari HTML yang akan diubah*/
+        /*syntax CSS adalah selector {properties;value;}*/
+        /*Selector dengan nama tag*/
+        h1{
+            color: black;
+        }
+        /*Selector id*/
+        #judul{
+            color: orange;
+        }
+        /*Selector class*/
+        .tengah{
+            align-self: center;
+            color: blue;
+        }
+        /*multy selector*/
+        h2,h3,h4{
+            color: midnightblue;
+        }
+        /*lebih spesifik lagi bisa*/
+        h2.tengah{
+            color: palevioletred;
+        }
+        img{
+            /* mengatur lebar gambar */
+            width: 200px;
+            /* mengatur tinggi gambar */
+            height: 200px;
+            /* memberikan garis lengkung pada element/tag */
+            border-radius: 50px;
+
+            /*Menengahkan gambar*/
+            display: block;
+            margin: 0px auto 0px auto;
+        }
+
+    </style>
+</head>
+<body>
+    <img src="assets/img/cu.gif" alt="cu">
+    <!--id= memberi tanda khusus elemen, tidak boleh sama-->
+    <h1 id="judul">Pengertian Teks Biografi</h1>
+    <P>Teks biografi adalah teks yang berisikan kisah suatu tokoh dalam mengarungi kehidupannya.
+    </P>
+    <!--CLASS= BISA DIPAKAI BERKALI-KALI, KALAU ID TIDAK DIGUNAKAN BERKALI-KALI-->
+    <h1 class="tengah"> Struktur Teks Biografi</h1>
+    <ol>
+        <li>Orientasi</li>
+        <li>Kejadian atau peristiwa penting</li>
+        <li>Reorientasi</li>
+    </ol>
+    <h2 class="tengah">Ciri-Ciri Teks Biografi/h2>
+    <h3>Berisikan fakta yang didasarkan pada pengalaman hidup tokoh <br>
+        Disajikan dalam bentuk narasi <br>
+        Menceritakan peristiwa penting yang dialami sang tokoh sehingga bisa dijadikan teladan bagi pembaca</h3>
+</body>
+</html>
